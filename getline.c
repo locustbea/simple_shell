@@ -1,12 +1,11 @@
 #include "getline.h"
 
 /**
- * char *_getline - func reads input line
+ * _getline - func reads input line
  * @fd: memory read file descriptor
  * Return: next input line (Success), error or more lines (NULL)
  */
 char *_getline(const int fd)
-
 {
 	char *line = NULL;
 	static buf_table_t table;
@@ -16,9 +15,7 @@ char *_getline(const int fd)
 
 	if (buf)
 	{
-		/* we need code for this */
-    
-	}
+		/* we need code for this */	}
 	return (line);
 }
 
@@ -33,7 +30,6 @@ static buf_t *_getline_buf(buf_table_t *table, const int fd)
 {
 	size_t index =fd % GETLINE_TABLE_SIZE;
 	buf_table_node_t *item = NULL;
-
 	if (table)
 	{
 		/* we need code for this */
